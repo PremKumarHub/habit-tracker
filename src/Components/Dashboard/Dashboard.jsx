@@ -4,12 +4,18 @@ import MainContent from './MainContent'; // your main dashboard content componen
 
 function Dashboard() {
   return (
-    <div className="flex min-h-screen bg-green-50 p-5 ">
-  <div className="flex flex-1 min-h-screen border-16 border-white bg-gray-100 rounded-3xl shadow-lg">
+ <div className="min-h-screen bg-green-50 p-5 flex items-center justify-center border-white ">
+  <div className="flex w-full max-w-7xl min-h-[90vh] bg-gray-100 rounded-3xl shadow-lg overflow-hidden border-white [border-width:2rem]">
+    {/* Sidebar */}
     <SideNav />
-    <MainContent />
+
+    {/* Main Content */}
+    <div className="flex-1 p-6">
+      <MainContent />
+    </div>
   </div>
 </div>
+
 
   );
 }
